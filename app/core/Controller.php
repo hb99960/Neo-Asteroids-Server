@@ -1,9 +1,9 @@
 <?php
 
-class Controller{
-
-    public function view($name){
-
+class Controller
+{
+    public function view($name)
+    {
         $filename = "../app/views/".$name.".view.php";
         if(file_exists($filename)){
             require $filename;
